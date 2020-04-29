@@ -1,0 +1,38 @@
+module lfsr_flipflop (lfsrin, lfsr0, lfsr1, lfsr2, lfsr3, lfsr4, clk))
+
+input clk;
+input [4:0] lfsrin;
+
+output reg lfsr0, lfsr1, lfsr2, lfsr3, lfsr4;
+
+always @ (posedge clk)
+
+begin
+lfsr3 <= lfsrin[4];
+end
+
+always @ (posedge clk)
+
+begin
+lfsr2 <= lfsrin[3];
+end
+
+always @ (posedge clk)
+
+begin
+lfsr1 <= lfsrin[2];
+end
+
+always @ (posedge clk)
+
+begin
+lfsr0 <= lfsrin[1];
+end
+
+always @ (posedge clk)
+
+begin
+lfsr4 <= (lfsrin[0]^lfsrin[2]);
+end
+
+endmodule

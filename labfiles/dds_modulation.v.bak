@@ -1,0 +1,16 @@
+module dds_modulation(clk, lfsr_mod, in_mod, out_mod)
+
+input clk,lfsr_mod;
+input [11:0] in_mod;
+
+output [11:0] out_mod;
+
+always @(posedge clk)
+
+begin
+if (lfsr_mod)
+	out_mod <= in_mod;
+	
+else 
+	out_mod <= 0;
+end

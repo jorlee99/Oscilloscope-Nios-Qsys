@@ -1,0 +1,36 @@
+# do dds_and_nios_lab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:49:17 on Mar 30,2020
+# vlog -work work dds_and_nios_lab.vo 
+# -- Compiling module signal_retriever
+# 
+# Top level modules:
+# 	signal_retriever
+# End time: 15:49:17 on Mar 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:49:17 on Mar 30,2020
+# vlog -work work signal_retriever_tb.vwf.vt 
+# -- Compiling module signal_retriever_vlg_sample_tst
+# -- Compiling module signal_retriever_vlg_check_tst
+# -- Compiling module signal_retriever_vlg_vec_tst
+# 
+# Top level modules:
+# 	signal_retriever_vlg_vec_tst
+# End time: 15:49:17 on Mar 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "dds_and_nios_lab.do" 
+# Start time: 15:49:17 on Mar 30,2020
+# Loading work.signal_retriever_vlg_vec_tst
+# Loading work.signal_retriever
+# Loading altera_ver.dffeas
+# Loading work.signal_retriever_vlg_sample_tst
+# Loading work.signal_retriever_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : signal_retriever_tb.vwf.vt(582)
+#    Time: 1 us  Iteration: 0  Instance: /signal_retriever_vlg_vec_tst/tb_out
+# End time: 15:49:17 on Mar 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
